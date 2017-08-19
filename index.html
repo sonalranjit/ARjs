@@ -18,23 +18,13 @@
 		<a class="btn btn-default" href="http://www.shoezoo.com/nike-men-s-air-waffle-trainer-leather-454395-004.html" role="button" target="_blank">Store</a>
 		<a class="btn btn-default" href="https://www.youtube.com/watch?v=HZ1bHXKOGM8" role="button" target="_blank">Reviews</a>
 	</div>
-	<!--div style='float: right; width: 300px;'>
-		<div style='position: fixed; top: 300px; z-index: 1;'>
-		<iframe width="300" height="200" src="https://www.youtube.com/embed/HZ1bHXKOGM8" frameborder="0" allowfullscreen></iframe>
-		</div>
-	</div-->
-	<!--div style='float: right; width:100px;'>
-		<div style='position: fixed; top: 300px; z-index: 1;'>
-		  <a class="btn btn-default" href="https://www.youtube.com/watch?v=HZ1bHXKOGM8" role="button" target="_blank">Reviews</a>
-		</div>
-	</div-->
 
 	<a-scene embedded arjs='trackingMethod: best;'>
 		<a-assets>
 			<a-asset-item id="nike-waffle-obj" src="data/models/nike.obj"></a-asset-item>
 			<a-asset-item id="nike-waffle-mtl" src="data/models/nike.mtl"></a-asset-item>
 		</a-assets>
-		<a-marker type='pattern' patternUrl='./data/shopperslogo.patt' size='1'>
+		<a-marker type='pattern' url='./data/shopperslogo.patt' size='1'>
 			<a-entity obj-model="obj: #nike-waffle-obj; mtl: #nike-waffle-mtl"
 			scale="0.3 0.3 0.3"
 			rotation="0 0 0"
